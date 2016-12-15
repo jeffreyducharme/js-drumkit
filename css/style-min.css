@@ -1,0 +1,55 @@
+/* Drum Kit CSS*/
+
+* { margin:auto; }
+
+body {
+	background: url('../dk-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: rgba(255, 255, 255, 1);
+	font-size: 16px;
+}
+
+h1 { text-align: center; }
+
+.keys {
+	display: flex;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 25%;
+}
+
+.key {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2em;
+    border: .1em solid rgba(255, 255, 255, 0.1);
+    margin: .2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.playing {
+	transform: scale(1.1);
+    border: .2em solid rgba(220,225,76,0.7);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(220,225,76,0.7)
+}
+
+.sound {
+	font-size: 2rem;
+	display: block;
+	margin-top: 1em;
+	color: rgba(220,225,76,0.7);
+}
+
+kbd {
+    padding: 0.4em 0.5em;
+    font-size: 90%;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+
