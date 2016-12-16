@@ -12,20 +12,28 @@ body {
 
 h1 { text-align: center; }
 
+.container-fluid {
+    text-align: center;
+}
+
 .keys {
-	display: flex;
 	color: rgba(255, 255, 255, 0.5);
-	margin-top: 25%;
+	margin-top: 15%;
+    white-space:wrap;
 }
 
 .key {
     font-size: 2rem;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     border: .1em solid rgba(255, 255, 255, 0.1);
     margin: .2em;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
     transition: all .1s;
 }
 
@@ -53,3 +61,11 @@ kbd {
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
 }
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
